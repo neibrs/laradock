@@ -641,6 +641,8 @@ RUN if [ ${INSTALL_IONCUBE} = true ]; then \
 
 USER root
 
+RUN	echo '199.232.68.133 raw.githubusercontent.com' >> /etc/hosts
+
 ARG INSTALL_DRUPAL_CONSOLE=false
 
 RUN if [ ${INSTALL_DRUPAL_CONSOLE} = true ]; then \
