@@ -4,4 +4,4 @@ drupal:
   ports:
     - 8080:80
   volumes:
-    - ../drupal:/var/www/html
+    - ../../drupal:/var/www/html
