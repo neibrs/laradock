@@ -647,7 +647,6 @@ ARG INSTALL_DRUPAL_CONSOLE=false
 
 RUN if [ ${INSTALL_DRUPAL_CONSOLE} = true ]; then \
     apt-get -y install mysql-client && \
-		echo '199.232.68.133 raw.githubusercontent.com' >> /etc/hosts && \
     curl https://drupalconsole.com/installer -L -o drupal.phar && \
     mv drupal.phar /usr/local/bin/drupal && \
     chmod +x /usr/local/bin/drupal \
